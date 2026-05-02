@@ -3,56 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Profile</title>
+    <title>Vicélio Machaila - Academic Profile</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 40px;
-            background-color: #f9f9f9;
+            background-color: #f4f6f7;
             color: #333;
         }
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
             background: #fff;
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
         }
         h1, h2 {
             color: #2c3e50;
         }
-        ul {
-            margin-left: 20px;
+        .profile {
+            display: flex;
+            align-items: flex-start;
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        .profile img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid #2c3e50;
         }
         .section {
             margin-bottom: 30px;
+        }
+        ul {
+            margin-left: 20px;
         }
         .contact {
             background: #ecf0f1;
             padding: 15px;
             border-radius: 8px;
         }
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Academic Profile</h1>
 
-    <div class="section">
-        <h2>About</h2>
-        <p>
-            I am an academic and educator with a strong focus on Computer Science, Information Systems,
-            and Corporate Engineering. My work bridges theoretical foundations with practical implementation,
-            particularly in programming, systems design, and organizational technology.
-        </p>
-        <p>
-            My teaching philosophy emphasizes clarity, problem-solving, and real-world application. I develop
-            structured exercises, case studies, and project-based assignments to enhance student engagement
-            and mastery of key concepts.
-        </p>
+    <div class="profile">
+        <!-- Replace 'your-photo.jpg' with your actual image file -->
+        <img src="your-photo.jpg" alt="Vicélio Machaila">
+
+        <div>
+            <h1>Vicélio Machaila</h1>
+            <p>
+                Vicélio Machaila is a computer scientist and Distinguished Teaching Professor of Computer Science at the Diogo Eugénio Guilande Technical University in Maputo, Mozambique. He also serves as Coordinator of the Faculty of Computer Sciences at the same institution.
+            </p>
+            <p>
+                He holds both a Bachelor of Science (BSc) and a Master of Science (MSc) in Computer Science, earned in India, where he spent five years pursuing his academic training. His work focuses on advancing computer science education, integrating theory with practice, and fostering innovation in higher education.
+            </p>
+        </div>
     </div>
 
     <div class="section">
@@ -76,8 +96,8 @@
             <li>Database Systems</li>
         </ul>
         <p>
-            My approach integrates theory with hands-on practice, encouraging students to design,
-            implement, and evaluate real-world systems.
+            His teaching approach integrates theoretical instruction with hands-on practice,
+            encouraging students to design, implement, and evaluate real-world systems.
         </p>
     </div>
 
@@ -92,11 +112,7 @@
 
     <div class="section contact">
         <h2>Contact</h2>
-        <p>
-            For academic collaboration, teaching opportunities, or research discussions,
-            feel free to reach out.
-        </p>
-        <p>Email: your.email@example.com</p>
+        <p>Email: viceliomachaila@utdeg.ac.mz</p>
     </div>
 
 </div>
