@@ -23,23 +23,35 @@
         h1, h2 {
             color: #2c3e50;
         }
+        .profile div {
+            flex: 1;
+        }
         .profile {
             display: flex;
-            align-items: flex-start;
-            gap: 25px;
+            align-items: center;  
+            gap: 30px;
             margin-bottom: 30px;
         }
         .profile img {
-            width: 380px;
-            height: 280px;
+            width: 220px;
+            height: 220px;
             object-fit: cover;
-            border-radius: 10px;
+            border-radius: 50%;  
             border: 3px solid #2c3e50;
         }
         .section {
             background: #ecf0f1;
             margin-bottom: 30px;
+            padding: 20px;           
+            border-radius: 8px;      
         }
+        h1 {
+            margin-top: 0;
+        }
+    
+        p {
+            text-align: justify;
+            }
         ul {
             margin-left: 20px;
         }
@@ -48,13 +60,18 @@
             padding: 15px;
             border-radius: 8px;
         }
-        @media (max-width: 768px) {
-            .profile {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
+       @media (max-width: 768px) {
+        .profile {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
+    
+        .profile img {
+            width: 180px;
+            height: 180px;
+        }
+    }
     </style>
 </head>
 <body>
@@ -64,7 +81,7 @@
     <div class="profile">
         <img src="https://raw.githubusercontent.com/viceliom/bio/b7c2d3b3fdf116abe7d73916de4947cbf0adb803/Profile.jpg" alt="Vicélio Machaila">
 
-        <div>
+        <div class="section">
             <h1>About</h1>
             <p>
                 Vicélio Machaila is a computer scientist and Distinguished Teaching Lecturer of Computer Science at the Diogo Eugénio Guilande Technical University in Maputo, Mozambique. He also serves as Coordinator of the Faculty of Computer Sciences at the same institution.
